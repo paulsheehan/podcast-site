@@ -1,0 +1,8 @@
+.Button {
+    background-color: blue;
+    min-width: 120px;
+
+    &.secondary {
+        background-color: green;
+    }
+}
