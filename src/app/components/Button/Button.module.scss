@@ -1,8 +1,20 @@
 .Button {
-    background-color: blue;
-    min-width: 120px;
+  background-color: #000000;
+  border: solid 2px #000000;
+  box-shadow: 7px 7px rgba($color: #000000, $alpha: 0.25);
+  color: #ffffff;
+  padding: 20px 36px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
 
-    &.secondary {
-        background-color: green;
-    }
+  &.secondary {
+    background-color: transparent;
+    color: #000000;
+  }
+
+  &.nav {
+    padding: 12px 24px;
+  }
 }

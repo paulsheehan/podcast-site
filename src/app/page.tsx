@@ -6,7 +6,13 @@ import { Button } from './components/Button/Button';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Button primary={true} label="Subscribe" link href="https://www.google.com/"></Button>
+      <Button
+        primary={true}
+        label="Subscribe"
+        link
+        nav={true}
+        href="https://www.google.com/"
+      ></Button>
     </main>
   );
 }
