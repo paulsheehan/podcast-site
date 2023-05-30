@@ -1,7 +1,6 @@
 // Navbar.stories.ts|tsx
 
-import type { Meta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import Navbar from './Navbar';
 
 const meta: Meta<typeof Navbar> = {
