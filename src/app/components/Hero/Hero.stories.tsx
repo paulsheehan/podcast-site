@@ -1,0 +1,15 @@
+// Navbar.stories.ts|tsx
+
+import type { Meta, StoryObj } from '@storybook/react';
+import Hero from './Hero';
+
+const meta: Meta<typeof Hero> = {
+  title: 'Hero',
+  component: Hero,
+};
+
+export default meta;
+type Story = StoryObj<typeof Hero>;
+export const Primary: Story = {
+  args: {},
+};

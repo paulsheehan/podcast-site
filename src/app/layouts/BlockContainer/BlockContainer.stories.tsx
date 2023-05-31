@@ -10,6 +10,5 @@ export default meta;
 type Story = StoryObj<typeof BlockContainer>;
 
 export const Primary: Story = {
-  args: {
-  },
+  args: {},
 };

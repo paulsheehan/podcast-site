@@ -1,19 +1,18 @@
 .Navbar {
-    background-color: #F7EDE8;
-    .container {
-        display: flex;
-        align-items: center;
-    }
-    .icon {
-
-    }
-    .menuList {
-        display: flex;
-        align-items: center;
-        background: green;
-        list-style-type: none;
-    }
-    .ctaArea {
-        margin-left: auto;
-    }
+  background-color: #f7ede8;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+  }
+  .menuList {
+    display: flex;
+    align-items: center;
+    background: green;
+    list-style-type: none;
+  }
+  .ctaArea {
+    margin-left: auto;
+  }
 }
