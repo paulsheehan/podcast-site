@@ -3,6 +3,7 @@ import BlockContainer from '../../../app/layouts/BlockContainer/BlockContainer';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
 import cn from 'classnames';
+import { LinkButton } from '../LinkButton/LinkButton';
 
 interface Props {}
 
@@ -18,18 +19,18 @@ export default function Navbar({}: Props) {
         ></Image>
         <ul className={styles.menuList}>
           <li>
-            <a href="#">Episodes</a>
+            <LinkButton href="/episodes" inline>Episodes</LinkButton>
           </li>
           <li>
-            <a href="#">About</a>
+            <LinkButton href="/about" inline>About</LinkButton>
           </li>
           <li>
-            <a href="#">More</a>
+            <LinkButton href="/more" inline>More</LinkButton>
           </li>
         </ul>
         <div className={styles.ctaArea}>
-          <Button primary={false} nav link label="Recent Episodes"></Button>
-          <Button primary nav link label="Subscribe" href="#"></Button>
+          <Button primary={false} small label="Recent Episodes"></Button>
+          <Button primary small label="Subscribe"></Button>
         </div>
       </BlockContainer>
     </nav>

@@ -1,27 +1,36 @@
+import Link from 'next/link';
 import styles from '../../styles/ButtonLink.module.scss';
 import cn from 'classnames';
 
-interface Button extends React.ButtonHTMLAttributes<HTMLButtonElement>{
+interface ButtonLink {
   primary?: boolean;
   small?: boolean;
-  label: string;
+  inline?: boolean;
+  label?: string;
+  href: string;
+  children: React.ReactNode;
 }
 
-export const Button = ({
+
+export const LinkButton = ({
   primary = true,
   small = false,
+  inline,
   label,
+  href,
+  children,
   ...attributes
-}: Button) => {
+}: ButtonLink) => {
   const classNames = cn(styles.Button, {
     [styles.primary]: primary,
     [styles.secondary]: !primary,
     [styles.small]: small,
+    [styles.inline]: inline,
   });
 
   return (
-    <button className={classNames} {...attributes}>
-      {label}
-    </button>
+    <Link href={href} className={classNames} {...attributes}>
+      {children}
+    </Link>
   )
 };

@@ -7,15 +7,17 @@ import cn from 'classnames';
 interface Props {}
 
 export default function Navbar({}: Props) {
+  const handleClick = (() => {
+    console.log('click');
+  });
+
   return (
     <section className={styles.Hero}>
       <BlockContainer flex>
         <Button
           primary={true}
+          small={true}
           label="Subscribe"
-          link
-          nav={true}
-          href="https://www.google.com/"
         />
       </BlockContainer>
     </section>

@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero';
 export default function Home() {
   return (
     <main className={styles.main}>
+      <h1>Home</h1>
       <Hero />
     </main>
   );

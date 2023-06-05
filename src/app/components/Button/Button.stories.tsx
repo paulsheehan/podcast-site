@@ -16,19 +16,10 @@ export const Primary: Story = {
   },
 };
 
-export const Link: Story = {
-  args: {
-    primary: false,
-    label: 'Button',
-    link: true,
-  },
-};
-
 export const Nav: Story = {
   args: {
     primary: false,
     label: 'Button',
-    link: false,
-    nav: true,
+    small: true,
   },
 };
