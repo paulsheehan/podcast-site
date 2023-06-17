@@ -11,15 +11,14 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    children: <span>Subscribe</span>,
   },
 };
 
 export const Nav: Story = {
   args: {
     primary: false,
-    label: 'Button',
     small: true,
+    children: <span>About</span>
   },
 };

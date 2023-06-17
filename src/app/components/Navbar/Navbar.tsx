@@ -29,8 +29,12 @@ export default function Navbar({}: Props) {
           </li>
         </ul>
         <div className={styles.ctaArea}>
-          <Button primary={false} small label="Recent Episodes"></Button>
-          <Button primary small label="Subscribe"></Button>
+          <Button primary={false} small>
+            <span>Recent Episodes</span>
+          </Button>
+          <Button primary small>
+            <span>Subscribe</span>
+          </Button>
         </div>
       </BlockContainer>
     </nav>

@@ -7,9 +7,10 @@
   padding: 20px 36px;
   border-radius: 8px;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
-
+  font-family: inherit;
   &:hover {
     cursor: pointer;
   }

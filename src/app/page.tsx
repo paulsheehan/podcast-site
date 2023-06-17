@@ -8,11 +8,7 @@ const pageContent = <>
   <h1>Your Daily <span className="block red">Podcast</span></h1>
   <p>We cover all kinds of categories and
 a weekly special guest.</p>
-  <Button
-    primary={true}
-    small={true}
-    label="Subscribe"
-  />
+  <Button><span>Subscribe</span></Button>
 </>
 
 
