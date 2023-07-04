@@ -1,5 +1,5 @@
 import { Button } from '../Button/Button';
-import BlockContainer from '../../../app/layouts/BlockContainer/BlockContainer';
+import BlockContainer from '../BlockContainer/BlockContainer';
 import Image from 'next/image';
 import styles from './hero.module.scss';
 import cn from 'classnames';

@@ -1,10 +1,11 @@
-import './globals.css';
 import { Montserrat_Alternates } from 'next/font/google';
-
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import styles from './Layout.module.scss';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+import cn from 'classnames';
 
 const font = Montserrat_Alternates({ 
+  variable: '--font-mont-alt',
   weight: ['300', '400', '500', '700'], 
   subsets: ['latin']
 });
@@ -19,13 +20,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const classNames = cn(font.variable, styles.main);
   return (
-    <html lang="en">
-      <body className={font.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <Navbar/>
+      {children}
+      <Footer />
+    </>
   );
 }

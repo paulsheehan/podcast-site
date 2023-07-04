@@ -1,5 +1,6 @@
+import { Montserrat_Alternates } from 'next/font/google';
 import { Button } from '../Button/Button';
-import BlockContainer from '../../../app/layouts/BlockContainer/BlockContainer';
+import BlockContainer from '../BlockContainer/BlockContainer';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
 import cn from 'classnames';
@@ -7,9 +8,17 @@ import { LinkButton } from '../LinkButton/LinkButton';
 
 interface Props {}
 
+const font = Montserrat_Alternates({ 
+  variable: '--font-mont-alt',
+  weight: ['300', '400', '500', '700'], 
+  subsets: ['latin']
+});
+
+
 export default function Navbar({}: Props) {
+  const classNames = cn(font.variable, styles.Navbar);
   return (
-    <nav className={styles.Navbar}>
+    <nav className={classNames}>
       <BlockContainer flex>
         <Image
           src="/logo.svg"
