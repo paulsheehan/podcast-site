@@ -2,6 +2,7 @@ import { Montserrat_Alternates } from 'next/font/google';
 import { Button } from '../Button/Button';
 import BlockContainer from '../BlockContainer/BlockContainer';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './navbar.module.scss';
 import cn from 'classnames';
 import { LinkButton } from '../LinkButton/LinkButton';
@@ -20,12 +21,14 @@ export default function Navbar({}: Props) {
   return (
     <nav className={classNames}>
       <BlockContainer flex>
-        <Image
-          src="/logo.svg"
-          alt="Picture of the author"
-          width={74}
-          height={74}
-        ></Image>
+        <LinkButton href="/" inline>
+          <Image
+              src="/logo.svg"
+              alt="Picture of the author"
+              width={74}
+              height={74}
+            />
+        </LinkButton>
         <ul className={styles.menuList}>
           <li>
             <LinkButton href="/episodes" inline>Episodes</LinkButton>
