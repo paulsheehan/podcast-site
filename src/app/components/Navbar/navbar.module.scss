@@ -1,5 +1,6 @@
+@use '/src/app/styles/variables.scss';
 .Navbar {
-  background-color: #f7ede8;
+  background-color: variables.$bg-primary;
   z-index: 100;
   padding-top: 24px;
   .container {

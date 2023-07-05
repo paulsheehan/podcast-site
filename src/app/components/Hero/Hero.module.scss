@@ -1,6 +1,7 @@
+@use '/src/app/styles/variables.scss';
 .Hero {
   position: relative;
-  background-color: #f7ede8;
+  background-color: variables.$bg-primary;
   padding-bottom: 120px;
   text-align: center;
   h1 {
@@ -9,7 +10,7 @@
     margin-bottom: 40px;
     span {
       display: block;
-      color: #cd4631;
+      color: variables.$text-secondary;
     }
   }
   p {
