@@ -10,4 +10,8 @@
   &.column {
     flex-direction: column;
   }
+
+  button:not(:first-child) {
+    margin-left: 20px;
+  }
 }

@@ -4,17 +4,26 @@ import type { NextPageWithLayout } from './_app';
 import { montserratAlternates } from '../app/utils/fonts';
 
 import { Button } from '../app/components/Button/Button';
+import BlockContainer from '../app/components/BlockContainer/BlockContainer';
 import Hero from '../app/components/Hero/Hero';
 
 const pageContent = (
   <>
     <h1>
-      Your Daily <span className="block red">Podcast</span>
+      About <span className="block red">Pod of Cast</span>
     </h1>
-    <p>We cover all kinds of categories and a weekly special guest.</p>
-    <Button>
-      <span>Subscribe</span>
-    </Button>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
+    </p>
+    <BlockContainer>
+      <Button primary={false}>
+        <span>Become Sponsor</span>
+      </Button>
+      <Button>
+        <span>Subscribe</span>
+      </Button>
+    </BlockContainer>
   </>
 );
 
