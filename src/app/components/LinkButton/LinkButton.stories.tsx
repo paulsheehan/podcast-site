@@ -13,7 +13,7 @@ export const Primary: Story = {
   args: {
     primary: true,
     children: 'Button',
-    href:"#"
+    href: '#',
   },
 };
 
@@ -22,16 +22,16 @@ export const Nav: Story = {
     primary: false,
     children: 'Button',
     small: true,
-    href:'#'
+    href: '#',
   },
 };
 
 export const Inline: Story = {
-    args: {
-      primary: false,
-      children: 'Button',
-      small: true,
-      href:'#',
-      inline: true
-    },
-  };
+  args: {
+    primary: false,
+    children: 'Button',
+    small: true,
+    href: '#',
+    inline: true,
+  },
+};

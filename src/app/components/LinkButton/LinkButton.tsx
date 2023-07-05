@@ -11,7 +11,6 @@ interface ButtonLink {
   children: React.ReactNode;
 }
 
-
 export const LinkButton = ({
   primary = true,
   small = false,
@@ -32,5 +31,5 @@ export const LinkButton = ({
     <Link href={href} className={classNames} {...attributes}>
       {children}
     </Link>
-  )
+  );
 };

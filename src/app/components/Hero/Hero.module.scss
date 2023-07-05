@@ -1,2 +1,25 @@
 .Hero {
+  position: relative;
+  background-color: #f7ede8;
+  padding-bottom: 120px;
+  h1 {
+    .block {
+        display: block;
+    }
+    .red {
+        background-color: #CD4631;
+    }
+  }
+
+  .bgImage {
+    position: absolute;
+    bottom: 0;
+    &.left {
+      left: -80px;
+    }
+    &.right {
+      bottom: 25%;
+      right: 60px;
+    }
+  }
 }

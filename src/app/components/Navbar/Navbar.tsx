@@ -9,12 +9,11 @@ import { LinkButton } from '../LinkButton/LinkButton';
 
 interface Props {}
 
-const font = Montserrat_Alternates({ 
+const font = Montserrat_Alternates({
   variable: '--font-mont-alt',
-  weight: ['300', '400', '500', '700'], 
-  subsets: ['latin']
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
 });
-
 
 export default function Navbar({}: Props) {
   const classNames = cn(font.variable, styles.Navbar);
@@ -23,21 +22,27 @@ export default function Navbar({}: Props) {
       <BlockContainer flex>
         <LinkButton href="/" inline>
           <Image
-              src="/logo.svg"
-              alt="Picture of the author"
-              width={74}
-              height={74}
-            />
+            src="/logo.svg"
+            alt="Picture of the author"
+            width={74}
+            height={74}
+          />
         </LinkButton>
         <ul className={styles.menuList}>
           <li>
-            <LinkButton href="/episodes" inline>Episodes</LinkButton>
+            <LinkButton href="/episodes" inline>
+              Episodes
+            </LinkButton>
           </li>
           <li>
-            <LinkButton href="/about" inline>About</LinkButton>
+            <LinkButton href="/about" inline>
+              About
+            </LinkButton>
           </li>
           <li>
-            <LinkButton href="/more" inline>More</LinkButton>
+            <LinkButton href="/more" inline>
+              More
+            </LinkButton>
           </li>
         </ul>
         <div className={styles.ctaArea}>

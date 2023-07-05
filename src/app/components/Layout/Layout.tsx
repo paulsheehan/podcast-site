@@ -4,10 +4,10 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import cn from 'classnames';
 
-const font = Montserrat_Alternates({ 
+const font = Montserrat_Alternates({
   variable: '--font-mont-alt',
-  weight: ['300', '400', '500', '700'], 
-  subsets: ['latin']
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
 });
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   const classNames = cn(font.variable, styles.main);
   return (
     <>
-      <Navbar/>
+      <Navbar />
       {children}
       <Footer />
     </>

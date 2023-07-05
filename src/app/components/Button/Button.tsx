@@ -1,7 +1,7 @@
 import styles from '../../styles/ButtonLink.module.scss';
 import cn from 'classnames';
 
-interface Button extends React.ButtonHTMLAttributes<HTMLButtonElement>{
+interface Button extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   primary?: boolean;
   small?: boolean;
 }
@@ -22,5 +22,5 @@ export const Button = ({
     <button className={classNames} {...attributes}>
       {children}
     </button>
-  )
+  );
 };

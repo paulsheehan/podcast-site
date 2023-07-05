@@ -2,6 +2,7 @@
 
 import type { Meta, StoryObj } from '@storybook/react';
 import Navbar from './Navbar';
+
 import imageFile from './public/logo.png';
 
 const meta: Meta<typeof Navbar> = {

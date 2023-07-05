@@ -19,6 +19,6 @@ export const Nav: Story = {
   args: {
     primary: false,
     small: true,
-    children: <span>About</span>
+    children: <span>About</span>,
   },
 };

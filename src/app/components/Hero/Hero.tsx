@@ -5,20 +5,35 @@ import styles from './hero.module.scss';
 import cn from 'classnames';
 
 interface Props {
-  children: React.ReactNode,
+  children: React.ReactNode;
 }
 
-export default function Hero({children}: Props) {
-  const handleClick = (() => {
+export default function Hero({ children }: Props) {
+  const handleClick = () => {
     console.log('click');
-  });
+  };
 
-  // Button render will be replaced with props to add list of buttons or an input element, etc.
   return (
     <section className={styles.Hero}>
       <BlockContainer flex column>
         {children}
       </BlockContainer>
+      <span className={cn(styles.bgImage, styles.left)}>
+        <Image
+          src="/stars-hero-left.svg"
+          alt="Left background hero illustration"
+          width={400}
+          height={438}
+        />
+      </span>
+      <span className={cn(styles.bgImage, styles.right)}>
+        <Image
+          src="/stars-hero-right.png"
+          alt="Right background hero illustration"
+          width={160}
+          height={216}
+        />
+      </span>
     </section>
   );
 }
