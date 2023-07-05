@@ -39,4 +39,8 @@
     line-height: 160%;
     padding: 0;
   }
+
+  @media only screen and (max-width: variables.$mobile-md) {
+    width: 100%;
+  }
 }

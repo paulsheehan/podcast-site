@@ -25,4 +25,16 @@
   background-position: bottom 50px left -160px, bottom 50% right 60px;
   background-repeat: no-repeat;
   background-size: 630px 593px, 160px 216px;
+
+    @media only screen and (max-width: variables.$mobile-lg) {
+        background-image: none;
+        padding-bottom: 80px;
+        h1 {
+            font-size: 64px;
+            margin: 22px;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+    }
 }

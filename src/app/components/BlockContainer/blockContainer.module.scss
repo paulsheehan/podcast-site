@@ -1,3 +1,4 @@
+@use '/src/app/styles/variables.scss';
 .BlockContainer {
   display: block;
   max-width: 1160px;
@@ -13,5 +14,15 @@
 
   button:not(:first-child) {
     margin-left: 20px;
+  }
+
+  @media only screen and (max-width: variables.$desktop-sm) {
+    padding: 0 20px;
+  }
+
+  @media only screen and (max-width: variables.$mobile-md) {
+    button:not(:first-child) {
+      margin: 20px 0 0 0;
+    }
   }
 }
