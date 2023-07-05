@@ -18,22 +18,6 @@ export default function Hero({ children }: Props) {
       <BlockContainer flex column>
         {children}
       </BlockContainer>
-      <span className={cn(styles.bgImage, styles.left)}>
-        <Image
-          src="/stars-hero-left.svg"
-          alt="Left background hero illustration"
-          width={400}
-          height={438}
-        />
-      </span>
-      <span className={cn(styles.bgImage, styles.right)}>
-        <Image
-          src="/stars-hero-right.png"
-          alt="Right background hero illustration"
-          width={160}
-          height={216}
-        />
-      </span>
     </section>
   );
 }
