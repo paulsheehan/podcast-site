@@ -5,9 +5,11 @@ import { montserratAlternates } from '../app/utils/fonts';
 
 import { Button } from '../app/components/Button/Button';
 import Hero from '../app/components/Hero/Hero';
+import Heading from '../app/components/Heading/Heading';
 import BlockContainer from '@/app/components/BlockContainer/BlockContainer';
+import Image from 'next/image';
 
-const pageContent = (
+const heroContent = (
   <>
     <h1>
       Your Daily <span className="block red">Podcast</span>
@@ -23,8 +25,30 @@ const pageContent = (
   </>
 );
 
+const testimonialBG = (
+  <Image
+    src="/sparkle.svg"
+    alt="Background sparkle image"
+    width={105}
+    height={105}
+  />
+)
+
 const Page: NextPageWithLayout = () => {
-  return <Hero>{pageContent}</Hero>;
+  return (
+    <>
+      <Hero>
+        {heroContent}
+      </Hero>
+      <section>
+        <Heading 
+          title="What our listeners say" 
+          paragraph="Their experience throughout every platform"
+          image={testimonialBG}
+        />
+      </section>
+    </>
+  );
 };
 
 Page.getLayout = function getLayout(page: ReactElement) {

@@ -12,6 +12,10 @@
     flex-direction: column;
   }
 
+  &.inline {
+    max-width: inherit;
+  }
+
   button:not(:first-child) {
     margin-left: 20px;
   }

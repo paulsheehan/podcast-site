@@ -11,7 +11,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "cypress": "cypress open",
-    "jest": "jest --watch"
+    "test": "jest --watch"
   },
   "dependencies": {
     "@next/font": "^13.4.6",

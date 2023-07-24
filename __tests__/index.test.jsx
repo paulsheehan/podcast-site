@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Home from '../src/app/page';
+import Home from '../src/pages/index';
 import '@testing-library/jest-dom';
 
 // Has valid JSX content
@@ -7,7 +7,7 @@ import '@testing-library/jest-dom';
 // JSX content equals specific content
 
 describe('Home', () => {
-  it('renders title', () => {
+  it('renders title with text', () => {
     render(<Home />);
 
     const heading = screen.getByRole('heading', {
@@ -15,5 +15,16 @@ describe('Home', () => {
     });
 
     expect(heading).toBeInTheDocument();
+  });
+
+  it('button subscribe text', () => {
+    render(<Home />);
+
+    const button = screen.getByRole('button', {
+      name: 'Subscribe',
+    });
+    
+
+    expect(button).toBeInTheDocument();
   });
 });
