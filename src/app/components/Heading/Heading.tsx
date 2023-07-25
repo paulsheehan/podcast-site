@@ -4,21 +4,23 @@ import Image from 'next/image';
 import cn from 'classnames';
 
 
-interface Heading extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface Props {
     title: string;
     paragraph?: string;
     image?: React.RefAttributes<HTMLImageElement | null>;
     left?: boolean;
 }
 
-export default function Heading({ title, paragraph, image, left=true}: Heading) {
+export default function Heading({ title, paragraph, image, left=true}: Props) {
+  const classNames = cn(styles.Heading, {
+    [styles.imgLeft]: left
+  });
   return (
-    <div className={styles.Heading}>
+    <div className={classNames}>
         <BlockContainer flex column inline>
-            {left? image: null}
-            <h2>{title}</h2>
-            <p>{paragraph}</p>
-            {!left? image: null}
+          {image}
+          <h2>{title}</h2>
+          <p>{paragraph}</p>
         </BlockContainer>
     </div>
   );

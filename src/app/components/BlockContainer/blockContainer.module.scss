@@ -1,9 +1,9 @@
 @use '/src/app/styles/variables.scss';
 .BlockContainer {
   display: block;
+  position: relative;
   max-width: 1160px;
   margin: 0 auto;
-
   &.flex {
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
   }
 
   &.inline {
-    max-width: inherit;
+    display: inline-flex;
   }
 
   button:not(:first-child) {

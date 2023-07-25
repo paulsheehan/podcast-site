@@ -7,6 +7,8 @@ import { Button } from '../app/components/Button/Button';
 import Hero from '../app/components/Hero/Hero';
 import Heading from '../app/components/Heading/Heading';
 import BlockContainer from '@/app/components/BlockContainer/BlockContainer';
+import Carousel from '@/app/components/Carousel/Carousel';
+
 import Image from 'next/image';
 
 const heroContent = (
@@ -45,7 +47,40 @@ const Page: NextPageWithLayout = () => {
           title="What our listeners say" 
           paragraph="Their experience throughout every platform"
           image={testimonialBG}
+          left={true}
         />
+        <Carousel>
+          <Image
+              src="/test-carousel.svg"
+              alt="Test Carousel item"
+              width={570}
+              height={360}
+          />
+          <Image
+            src="/test-carousel.svg"
+            alt="Test Carousel item"
+            width={570}
+            height={360}
+          />
+          <Image
+            src="/test-carousel.svg"
+            alt="Test Carousel item"
+            width={570}
+            height={360}
+          />
+          <Image
+              src="/test-carousel.svg"
+              alt="Test Carousel item"
+              width={570}
+              height={360}
+          />
+          <Image
+            src="/test-carousel.svg"
+            alt="Test Carousel item"
+            width={570}
+            height={360}
+          />
+        </Carousel>
       </section>
     </>
   );
