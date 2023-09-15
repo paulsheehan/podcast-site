@@ -2,19 +2,21 @@
 $dark: #000000;
 // text colors
 $text-primary: #000000;
-$text-secondary: #CD4631;
-$text-light: #FFFFFF;
+$text-secondary: #cd4631;
+$text-light: #ffffff;
 
 // bg colors
-$bg-light: #FFFFFF;
-$bg-primary: #F7EDE8;
-$bg-secondary: #EDF3F7;
+$bg-light: #ffffff;
+$bg-primary: #f7ede8;
+$bg-secondary: #edf3f7;
 
 // borders + shadows
-$btn-shadow: rgba($color: #000000, $alpha: 0.25);
+$btn-shadow: rgba(
+  $color: #000000,
+  $alpha: 0.25,
+);
 $border-primary: #000000;
-$border-secondary: #CD4631;
-
+$border-secondary: #cd4631;
 
 // breakpoints
 $desktop-sm: 1160px;

@@ -1,10 +1,10 @@
 import styles from './carousel.module.scss';
-import { useRef, useState, Children } from "react";
-import { animate, motion, useMotionValue } from "framer-motion";
+import { useRef, useState, Children } from 'react';
+import { animate, motion, useMotionValue } from 'framer-motion';
 import cn from 'classnames';
 
 interface Props {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export default function Carousel({ children }: Props) {
@@ -17,7 +17,7 @@ export default function Carousel({ children }: Props) {
   const [animationComplete, setAnimationComplete] = useState(true);
 
   const arrayChildren = Children.toArray(children);
-  
+
   const x = useMotionValue(0);
 
   const handleMouseMove = (e: React.PointerEvent<HTMLUListElement>) => {
@@ -30,8 +30,8 @@ export default function Carousel({ children }: Props) {
     const walk = (xVal - startX) * 2; //scroll-fast
 
     const controls = animate(x, scrollLeft - walk, {
-      type: "tween",
-      ease: "easeOut",
+      type: 'tween',
+      ease: 'easeOut',
       duration: 0.5,
       onUpdate: (val) => {
         if (!ref.current) return;
@@ -42,12 +42,13 @@ export default function Carousel({ children }: Props) {
       },
       onStop: () => {
         setAnimationComplete(true);
-      }
+      },
     });
     return controls.stop;
   };
 
   const handleMouseDown = (e: React.PointerEvent<HTMLUListElement>) => {
+    console.log('mousedown');
     if (!ref.current) return;
 
     setTrackMouse(true);
@@ -64,21 +65,26 @@ export default function Carousel({ children }: Props) {
   };
 
   const handleMouseUp = () => {
+    console.log('smouseup');
     setTrackMouse(false);
   };
 
   return (
     <div className={classNames}>
-        <motion.ul className={styles.carouselContainer}
-            ref={ref}
-            onMouseMove={handleMouseMove}
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseLeave}>
-            {Children.map(arrayChildren, (child, index) => {
-                return <motion.li className={styles.carouselItem}>{child}</motion.li>;
-            })}
-        </motion.ul>
+      <motion.ul
+        className={styles.carouselContainer}
+        ref={ref}
+        onMouseMove={handleMouseMove}
+        onMouseDown={handleMouseDown}
+        onMouseUp={() => {
+          handleMouseUp();
+        }}
+        onMouseLeave={handleMouseLeave}
+      >
+        {Children.map(arrayChildren, (child, index) => {
+          return <motion.li className={styles.carouselItem}>{child}</motion.li>;
+        })}
+      </motion.ul>
     </div>
   );
 }

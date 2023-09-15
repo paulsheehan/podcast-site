@@ -1,33 +1,32 @@
 .carousel {
-    display: block;
-    position: relative;
-    min-height: 600px;
-    overflow: hidden;
-    .carouselContainer {
-        position: absolute;
-        display: flex;
-        flex-shrink: 0;
-        overflow-x: scroll;
-        white-space: nowrap;
-        width: 100%;
+  display: block;
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+  .carouselContainer {
+    position: absolute;
+    display: flex;
+    flex-shrink: 0;
+    overflow-x: scroll;
+    width: 100%;
 
-        margin: 0;
-        list-style: none;
-        width: 100%;
-        height: auto;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: auto;
 
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
 
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
-        scrollbar-width: none;  /* Firefox */
-
-        &::-webkit-scrollbar { 
-            display: none;  /* Safari and Chrome */
-        }
-        &:hover {
-            cursor: pointer;
-        }
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
     }
-    .carouselItem {
-        flex-shrink: 0;
+    &:hover {
+      cursor: pointer;
     }
+  }
+  .carouselItem {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
 }

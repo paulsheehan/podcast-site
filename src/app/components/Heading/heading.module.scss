@@ -1,29 +1,29 @@
 @use '/src/app/styles/variables.scss';
 .Heading {
-    text-align: center;
-    padding-top: 150px;
-    margin-bottom: 100px;
-    background-repeat: no-repeat;
-    h2 {
-        font-size: 60px;
-        line-height: 1em;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    p {
-        font-size: 23px;
-        line-height: 1.6em;
-        margin: 0;
-    }
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  h2 {
+    font-size: 60px;
+    line-height: 1em;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 23px;
+    line-height: 1.6em;
+    margin: 0;
+  }
+  img {
+    position: absolute;
+    top: -120%;
+    left: 82%;
+  }
+  &.imgLeft {
     img {
-        position: absolute;
-        top: -120%;
-        left: 82%;
+      top: -75px;
+      left: -100px;
     }
-    &.imgLeft {
-        img {
-            top: -75px;
-            left: -100px;
-        }
-    }
+  }
 }
