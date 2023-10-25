@@ -12,13 +12,14 @@
   &.column {
     flex-direction: column;
   }
-
   &.inline {
     display: inline-flex;
   }
-
   &.left {
     align-items: flex-start;
+  }
+  &.spaceBetween {
+    justify-content: space-between;
   }
 
   button:not(:first-child) {

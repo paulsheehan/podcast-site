@@ -23,7 +23,6 @@ describe('Home', () => {
     const button = screen.getByRole('button', {
       name: 'Subscribe',
     });
-    
 
     expect(button).toBeInTheDocument();
   });

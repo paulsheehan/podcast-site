@@ -20,37 +20,29 @@ export default function TestimonialCard({
   const classNames = cn(styles.TestimonialCard);
   return (
     <div className={classNames}>
-        <BlockContainer flex column left>
+      <BlockContainer flex column left>
+        <Image
+          src="/quote-symbol.svg"
+          alt="Quotation mark"
+          width={48}
+          height={48}
+        />
+        <p className={styles.paragraph}>{paragraph}</p>
+        <BlockContainer flex left>
+          {avatarSrc ? (
+            <Image src={avatarSrc} alt="Avatar Image" width={48} height={48} />
+          ) : null}
+          <span>{name},</span>
+          {brandSrc ? (
             <Image
-                src="/quote-symbol.svg"
-                alt="Quotation mark"
-                width={48}
-                height={48}
+              src={brandSrc}
+              alt="Brand name and Image"
+              width={53}
+              height={22}
             />
-            <p className={styles.paragraph}>
-                { paragraph }
-            </p>
-            <BlockContainer flex left>
-                {
-                    avatarSrc? 
-                        <Image
-                        src={avatarSrc}
-                        alt="Avatar Image"
-                        width={48}
-                        height={48}
-                    />: null}
-                <span>{name},</span>
-                {
-                    brandSrc? 
-                        <Image
-                        src={brandSrc}
-                        alt="Brand name and Image"
-                        width={53}
-                        height={22}
-                    />: null
-                }
-            </BlockContainer>
+          ) : null}
         </BlockContainer>
+      </BlockContainer>
     </div>
   );
 }

@@ -8,6 +8,8 @@ import TestimonialSection from '@/sections/TestimonialSection';
 import { Button } from '@/app/components/Button/Button';
 import Hero from '@/app/components/Hero/Hero';
 import BlockContainer from '@/app/components/BlockContainer/BlockContainer';
+import Carousel from '@/app/components/Carousel/Carousel';
+import EpisodeCard from '@/app/components/EpisodeCard/EpisodeCard';
 
 const heroContent = (
   <>
@@ -33,6 +35,11 @@ const Page: NextPageWithLayout = () => {
   return (
     <>
       <Hero>{heroContent}</Hero>
+      <Carousel>
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+      </Carousel>
       <TestimonialSection />
     </>
   );

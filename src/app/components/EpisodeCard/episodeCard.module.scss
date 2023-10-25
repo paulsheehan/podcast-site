@@ -1,0 +1,28 @@
+.EpisodeCard {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+
+  height: 350px;
+  width: 350px;
+
+  &.noLink {
+    pointer-events: none;
+  }
+  .CardContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    height: 100%;
+  }
+  .Socials {
+    align-self: flex-end;
+  }
+  .Title {
+    text-align: left;
+    color: #81adc8;
+  }
+  .BgImg {
+    position: absolute;
+  }
+}

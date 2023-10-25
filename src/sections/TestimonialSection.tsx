@@ -19,9 +19,10 @@ const testimonialData = [
   {
     name: 'luna lovegood',
     brandSrc: './spotify-sm.svg',
-    paragraph: 'Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua.',
+    paragraph:
+      'Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua.',
     avatarSrc: './luna-avatar.svg',
-  }
+  },
 ];
 
 export default function TestimonialSection() {
@@ -35,19 +36,19 @@ export default function TestimonialSection() {
         left={true}
       />
       <Carousel>
-        <TestimonialCard 
+        <TestimonialCard
           name={testimonialData[0].name}
           paragraph={testimonialData[0].paragraph}
           avatarSrc={testimonialData[0].avatarSrc}
           brandSrc={testimonialData[0].brandSrc}
         />
-        <TestimonialCard 
+        <TestimonialCard
           name={testimonialData[0].name}
           paragraph={testimonialData[0].paragraph}
           avatarSrc={testimonialData[0].avatarSrc}
           brandSrc={testimonialData[0].brandSrc}
         />
-        <TestimonialCard 
+        <TestimonialCard
           name={testimonialData[0].name}
           paragraph={testimonialData[0].paragraph}
           avatarSrc={testimonialData[0].avatarSrc}

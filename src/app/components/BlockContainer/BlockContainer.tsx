@@ -7,6 +7,7 @@ interface Props {
   column?: boolean;
   inline?: boolean;
   left?: boolean;
+  spaceBetween?: boolean;
 }
 
 export default function BlockContainer({
@@ -14,6 +15,7 @@ export default function BlockContainer({
   column = false,
   inline = false,
   left = false,
+  spaceBetween = false,
   children,
 }: Props) {
   const classNames = cn(styles.BlockContainer, {
@@ -21,6 +23,7 @@ export default function BlockContainer({
     [styles.column]: column,
     [styles.inline]: inline,
     [styles.left]: left,
+    [styles.spaceBetween]: spaceBetween,
   });
   return <div className={classNames}>{children}</div>;
 }
