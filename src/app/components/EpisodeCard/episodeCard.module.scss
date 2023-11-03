@@ -1,10 +1,16 @@
 .EpisodeCard {
   position: relative;
   display: inline-block;
-  border-radius: 12px;
 
-  height: 350px;
-  width: 350px;
+  height: 375px;
+  width: 375px;
+
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 
   &.noLink {
     pointer-events: none;
@@ -19,10 +25,16 @@
     align-self: flex-end;
   }
   .Title {
+    font-size: 32px;
+    letter-spacing: -8%;
+    margin: 0;
     text-align: left;
     color: #81adc8;
   }
   .BgImg {
     position: absolute;
+    img {
+      border-radius: 12px;
+    }
   }
 }

@@ -19,13 +19,13 @@ export default function EpisodeCard({ imgSrc, title, link }: Props) {
       <span className={styles.BgImg}>
         <Image
           src={imgSrc}
-          width={350}
-          height={350}
+          width={375}
+          height={375}
           alt="Podcast episode title"
         />
       </span>
       <div className={styles.CardContainer}>
-        <BlockContainer flex column spaceBetween>
+        <BlockContainer flex column spaceBetween noPadding>
           <div className={styles.Socials}>
             <Image
               src="/episode-card-socials.svg"
@@ -34,7 +34,7 @@ export default function EpisodeCard({ imgSrc, title, link }: Props) {
               height={24}
             />
           </div>
-          <BlockContainer>
+          <BlockContainer noPadding>
             {title ? <h3 className={styles.Title}>{title}</h3> : null}
           </BlockContainer>
         </BlockContainer>

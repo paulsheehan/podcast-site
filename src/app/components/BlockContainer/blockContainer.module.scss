@@ -21,6 +21,9 @@
   &.spaceBetween {
     justify-content: space-between;
   }
+  &.noPadding {
+    padding: 0;
+  }
 
   button:not(:first-child) {
     margin-left: 20px;

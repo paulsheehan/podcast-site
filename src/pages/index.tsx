@@ -39,6 +39,14 @@ const Page: NextPageWithLayout = () => {
         <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
         <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
         <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+
       </Carousel>
       <TestimonialSection />
     </>
