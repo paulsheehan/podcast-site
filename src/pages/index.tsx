@@ -36,16 +36,16 @@ const Page: NextPageWithLayout = () => {
     <>
       <Hero>{heroContent}</Hero>
       <Carousel>
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
-        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1230' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1231' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1232' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1233' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1234' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1235' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1236' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1237' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1238' />
+        <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1239' />
 
       </Carousel>
       <TestimonialSection />
