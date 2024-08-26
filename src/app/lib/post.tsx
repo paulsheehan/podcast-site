@@ -18,6 +18,7 @@ export async function getPosts() {
     })
     .catch(err => {
         console.error(err);
+        return [];  
     });
 }
 
@@ -28,5 +29,6 @@ export async function getSinglePost(postSlug: PostType["slug"]) {
     })
     .catch(err => {
         console.error(err);
+        return [];
     });
 }

@@ -19,19 +19,19 @@ interface Props {
 }
 
 
-export async function getStaticProps() {
-  const posts = await getPosts()
+// export async function getStaticProps() {
+//   const posts = await getPosts()
 
-  if (!posts) {
-    return {
-      notFound: true,
-    }
-  }
+//   if (!posts) {
+//     return {
+//       notFound: true,
+//     }
+//   }
 
-  return {
-    props: { posts }
-  }
-}
+//   return {
+//     props: { posts }
+//   }
+// }
 
 const heroContent = (
   <>
@@ -53,7 +53,7 @@ const heroContent = (
   </>
 );
 
-const Page: NextPageWithLayout = (props: Props) => {
+const Page: NextPageWithLayout = () => {
   return (
     <>
       <Hero>{heroContent}</Hero>
@@ -70,9 +70,9 @@ const Page: NextPageWithLayout = (props: Props) => {
         <EpisodeCard title="Perplexed Mind" imgSrc="/pod-episode-mind.png" link='/blog/1239' />
       </Carousel>
       <ul>
-      {props.posts?.map((post: PostType) => (
+      {/* {props.posts?.map((post: PostType) => (
         <li key={post.id}><Link href={`/blog/${post.slug}`}>{post.title}</Link></li>
-      ))}
+      ))} */}
   </ul>
       <TestimonialSection />
     </>
