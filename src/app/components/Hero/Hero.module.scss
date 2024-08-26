@@ -22,7 +22,7 @@
   }
 
   background-image: url('/stars-hero-left.svg'), url('/stars-hero-right.png');
-  background-position: bottom 50px left -160px, bottom 50% right 60px;
+  background-position: top 0 left -160px, top calc(100% - 90px) right -30px;
   background-repeat: no-repeat;
   background-size: 630px 593px, 160px 216px;
 

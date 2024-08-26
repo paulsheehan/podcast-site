@@ -28,5 +28,6 @@ export default function BlockContainer({
     [styles.spaceBetween]: spaceBetween,
     [styles.noPadding]: noPadding,
   });
+  // Obviously I need a better way to right that classname
   return <div className={classNames}>{children}</div>;
 }

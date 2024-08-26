@@ -1,16 +1,44 @@
 import { useRouter } from 'next/router'
 import { getPosts, getSinglePost, PostType } from '@/app/lib/post';
+import Hero from '@/app/components/Hero/Hero';
+import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs';
+import BlockContainer from '@/app/components/BlockContainer/BlockContainer';
 
 interface Props {
   post?: PostType;
 }
+
+const title = "Back to articles";
+const linkTo = "/";
+
+const heroContent = (
+  <>
+    <BlockContainer left spaceBetween>
+      <div style={ {paddingTop: 80 }}>
+        <BlockContainer flex spaceBetween>
+          <Breadcrumbs title={title} linkTo={linkTo} />
+          <span>Date</span>
+        </BlockContainer>
+      </div>
+      <div>
+        <span className="block red">Tips & Tricks</span>
+      </div>
+      <h1>
+        Doodle artwork
+      </h1>
+    </BlockContainer>
+  </>
+);
+
 export default function BlogSingle() {
-  const router = useRouter()
+  const router = useRouter();
+
   return (
-    <div>
-      <h1>Blog Post</h1>
-      <div />
-    </div>
+    <>
+      <Hero>
+        {heroContent}
+      </Hero>
+    </>
   )
 }
 
